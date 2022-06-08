@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sound webpage_img</title>
+</head>
+<body>
+    <div class="contener">
+        <div class="navbar">
+            <img src="logo.png" alt="logo" class="logo0">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contect</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1> THE <br> REAL <br> SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Her to Lisen</p>
+                <img src="play.png" alt="" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio src="y2mate.com - Soolking feat Reynmen  Askim Clip Officiel.mp3"></audio>
+    <!-- <audio id="mySong"> -->
+        <!-- <source src="y2mate.com - Soolking feat Reynmen  Askim Clip Officiel.mp3" type="audio/mp3"> -->
+    <!-- </audio> -->
+
+    <script>
+                var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if ( mySong.paused){
+                mySong.paly();
+                icon.src ="pause.png"
+            }else{
+                mySong.paused();  
+                icon.src ="play.png"
+            }
+        }
+    </script>
+</body>
+</html>
